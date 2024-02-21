@@ -11,6 +11,13 @@ Welcome to the Product Tracker App repository! This project utilizes CustomTkint
 
 To run the Product Tracker App, run the ```app.py``` file.
 
+## Roadmap
+Here are some planned features for future releases of the Product Tracker App:
+
+- Data visualization for product usage trends
+- User authentication and profiles
+- Web and mobile app version for on-the-go tracking
+
 ## Support
 
 If you encounter any issues or have suggestions for improvement, please open an issue on the GitHub repository.
