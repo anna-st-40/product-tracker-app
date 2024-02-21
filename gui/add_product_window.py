@@ -1,4 +1,4 @@
-import json_data
+import backend.json_data as jd
 from datetime import date, datetime
 import customtkinter as ctk
 import tkinter          
@@ -138,7 +138,7 @@ class FrameRoot(ctk.CTkFrame):
         product_price = float(self.frame_price.entry.get()) if self.frame_price.entry.get() else 0
         product_volume = float(self.frame_volume.entry.get()) if self.frame_price.entry.get() else 0
 
-        json_data.add_product(product_name, product_dates, product_price, product_volume)
+        jd.add_product(product_name, product_dates, product_price, product_volume)
         self.root_app.frame_products.refresh_products()
         self.master.destroy()
 

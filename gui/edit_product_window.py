@@ -1,4 +1,4 @@
-import json_data
+import backend.json_data as jd
 import customtkinter as ctk
 import tkinter 
 
@@ -34,7 +34,7 @@ class FrameRadioButtons(ctk.CTkFrame):
             self.delete.grid_forget()
 
     def delete_product(self, event):
-        json_data.delete_product(self.product) 
+        jd.delete_product(self.product) 
         self.master.master.root_app.frame_products.refresh_products()
         self.master.master.destroy()
 
